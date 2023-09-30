@@ -140,11 +140,11 @@ Created on Sat Sep 30 13:21:19 2023
 
 # Amaliyot-6
 
-# users = ['alisher1983','aziza','yasina' 'umar']
+users = ['alisher1983','aziza','yasina' 'umar']
 
-# login = input("Yangi login tanlang:" )
+login = input("Yangi login tanlang:" )
 
-# if login in users:
-#     print('Login band, yangi login tanalng!')
-# else:
-#     print("Xush kelibsiz!")    
+if login in users:
+    print('Login band, yangi login tanalng!')
+else:
+    print("Xush kelibsiz!")    
