@@ -73,3 +73,67 @@ Created on Sun Oct  1 22:33:27 2023
 # print(phone)
 
 # AMALIYOT
+# otam (onam, akam, ukam, va hokazo) degan lug'at yarating va lug'atga shu inson haqida kamida 3 ta m'alumot kiriting 
+# (ismi, tu'gilgan yili, shahri, manzili va hokazo). Lug'atdagi ma'lumotni matn shaklida konsolga chiqaring: 
+# Otamning ismi Mavlutdin, 1954-yilda, Samarqand viloyatida tug'ilgan
+# ukam = {'ismi':'Farrux', 't_yili':1998, 'shahar':'Buxoro'}
+# print(f"Ukamning ismi {ukam['ismi'].title()}, {ukam['t_yili']}-yilda, {ukam['shahar']} viloyatida tug'ilgan ")
+
+# Oila a'zolaringizning sevimli taomlari lug'atini tuzing. Lug'atda kamida 5 ta ism-taom jufltigi bo'lsin. 
+# Kamida uch kishining sevimli taomini konsolga chiqaring: Alining sevimli taomi osh
+
+# s_taomlar = {
+#     'farrux':'osh',
+#     'temur':'shirguruch',
+#     'iroda':'shashlik',
+#     'humoyun':'nonkabob',
+#     'hayotbek':'kasha'
+#     }
+# farrux = s_taomlar['farrux']
+# humoyun = s_taomlar['humoyun'] 
+# hayotbek = s_taomlar['hayotbek']
+
+# print(f"Farruxning sevimli taomi {farrux}")
+# print(f"Humoyunning sevimli taomi {humoyun}")
+# print(f"Hayotbekning sevimli taomi {hayotbek}")
+
+# Python izohli lu'gati tuzing: Lug'atga shu kunga qadar o'rgangan 10 ta so'z 
+# (atamani) kiriting (masalan integer, float, string, if, else va hokazo) va har birining qisqacha 
+# tarjimasini yozing.
+
+dictionary = {
+    'integer':'butun sonlar',
+    'float':'o\'nli sonlar',
+    'string':'matn',
+    'boolean':'mantiqiy amallar',
+    'if':'agar',
+    'else':'aks holda',
+    'elif':'aks holda, agar',
+    'list':'ro\'yxatlar',  
+    'tuple':'o\'zgarmas ro\'yxat'
+    }
+
+# tarjima_1 = dictionary['integer']
+# tarjima_2 = dictionary['float']
+# tarjima_3 = dictionary['string']
+# tarjima_4 = dictionary['boolean']
+# tarjima_5 = dictionary['if']
+# tarjima_6 = dictionary['else']
+# tarjima_7 = dictionary['elif']
+# tarjima_8 = dictionary['list']
+
+# print(f"integer so'zi tarjimasi {tarjima_1}")
+
+# Foydalanuvchidan biror so'z kiritishni so'rang va so'zning tarjimasini yuqoridagi lug'atdan chiqarib bering.
+# Agar so'z lu'gatda mavjud bo'lmasa, "Bunda so'z mavjud emas" degan xabarni chiqaring.
+
+word = input("So'z kiriting: >>> ").lower()
+
+# print(dictionary.get(word, "Bunday so'z mavjud emas"))
+
+# Yuqoridagi vazifani if-else yordamida qiling va natijani ham foydalanuvchiga tushunarli ko'rinishda chiqaring.
+tarjima = dictionary.get(word)
+if tarjima==0:
+    print("Bunday so'z mavjud emas")
+else:
+    print(f"{word} so'zi {tarjima} deb tarjima qilinadi")
